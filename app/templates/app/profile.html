@@ -1,0 +1,39 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Profile{% endblock title %}
+{% block main-content %}
+<div class="container my-5">
+ <div class="row" style="margin: 111px 10px 111px 0px;">
+  <h3>Welcome <span class="text-capitalize">{{request.user}}</span> </h3>
+  <div class="col-md-2 border-end">
+   <ul class="list-unstyled">
+    <li class="d-grid"><a href="{% url 'profile' %}" class="btn btn_new  {{active}}">Profile</a></li>
+    <li class="d-grid"><a href="{% url 'address' %}" class="btn btn_hover">Address</a></li>
+   </ul>
+  </div>
+  <div class="col-md-6 ">
+   <form action="" method="post" novalidate>
+     {% csrf_token %}
+     {% for fm in form %}
+      <div class="form-group col-lg-12 mb-3">
+      {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small>
+      </div>
+     {% endfor %}
+    <div class="col-12 mt-3">
+      <button type="submit" class="btn btn-desing mb-3">Submit</button>
+    </div>
+   </form>
+   {% if messages %}
+    {% for message in messages %}
+     <p {% if message.tags %} class="alert alert-{{message.tags}} mb-5" {% endif %}>{{message}}}</p>
+    {% endfor %}
+    {% endif %}
+  </div>
+  <div class="col-md-4">
+    <div class="profile_image">
+      <img src="{% static 'app/images/banner/profile.jpg' %}" alt="">
+    </div>
+  </div>
+ </div>
+</div>
+{% endblock main-content %}

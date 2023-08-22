@@ -1,0 +1,64 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\rajpo\\anaconda3\\python.exe""terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "python.linting.prospectorEnabled": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "lonefy.vscode-JS-CSS-HTML-formatter"
+    },
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter.notebook.ipynb"
+    },
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.pydocstyleEnabled": false,
+    "python.linting.banditEnabled": false,
+    "python.linting.flake8Enabled": false,
+    "python.linting.mypyEnabled": false,
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "git.enableCommitSigning": true,
+    "git.allowForcePush": true,
+    "code-runner.runInTerminal": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.mouseWheelZoom": true,
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.saveFileBeforeRun": true,
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "[php]": {
+        "editor.defaultFormatter": "kokororin.vscode-phpfmt"
+    },
+    "python.defaultInterpreterPath": "C:\\Users\\rajpo\\anaconda3\\python.exe",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "bracketPairColorizer.depreciation-notice": false,
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+        "*.html": "html",
+        "*.json": "html"
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Cobalt2",
+    "python.diagnostics.sourceMapsEnabled": true,
+    "breadcrumbs.enabled": false,
+    "[django-html]": {
+    
+
+        banditEnabled "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": true,
+        }
+    },
+    "window.zoomLevel": 1
+},
